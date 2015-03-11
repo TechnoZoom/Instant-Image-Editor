@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:contentDescription="Choose"
+        android:text="Load image"/>
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:contentDescription="Selected Image"
+         />
+
+    <Button
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button1"
+        android:layout_toRightOf="@+id/button1"
+        android:onClick="saveAndShare"
+        android:contentDescription="Save and Share"
+        android:text="Save and Share" />
+    
+    
+    <ScrollView 
+     android:layout_below="@id/imageView1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     
+     >
+     
+        <LinearLayout 
+            android:layout_width="wrap_content"
+     		android:layout_height="wrap_content"
+     		android:orientation="vertical"
+            >
+            
+            <LinearLayout 
+            android:layout_width="wrap_content"
+     		android:layout_height="wrap_content"
+     		android:orientation="horizontal"
+            >
+    <Button 
+        android:id="@+id/bat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+       
+        android:text="Batman effect"
+        android:onClick="ba"
+        android:paddingTop="4dp"
+        />
+    
+    
+    <Button 
+        android:id="@+id/fire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignBottom="@id/bat"
+        android:layout_toRightOf="@id/bat"
+        android:paddingLeft="4dp"
+        android:text="Fire effect"
+        android:onClick="fr"
+        
+        />
+    </LinearLayout>
+    
+            
+       <LinearLayout 
+            android:layout_width="wrap_content"
+     		android:layout_height="wrap_content"
+     		android:orientation="horizontal"
+            >
+    
+    <Button 
+        android:id="@+id/gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignLeft="@id/bat"
+        android:layout_below="@id/bat"
+        android:paddingLeft="4dp"
+        android:text="Gold Effect"
+        android:onClick="go"
+        
+        />
+    
+    
+    <Button 
+        android:id="@+id/light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignBottom="@id/gold"
+        android:layout_toRightOf="@id/gold"
+        android:paddingLeft="4dp"
+        android:text="Lightning Effect"
+        android:onClick="li"
+        />
+    </LinearLayout>   
+    
+       <LinearLayout 
+            android:layout_width="wrap_content"
+     		android:layout_height="wrap_content"
+     		android:orientation="horizontal"
+            >
+    
+    <Button 
+        android:id="@+id/multi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignLeft="@id/gold"
+        android:layout_below="@id/gold"
+        android:paddingLeft="4dp"
+        android:text="Multicolor Effect"
+        android:onClick="ml"
+        
+        />
+    
+    <Button 
+        android:id="@+id/purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignBottom="@id/multi"
+        android:layout_toRightOf="@id/multi"
+        android:paddingLeft="4dp"
+        android:text="Purple Effect"
+        android:onClick="pu"
+        />
+    
+    </LinearLayout>
+    
+       <LinearLayout 
+            android:layout_width="wrap_content"
+     		android:layout_height="wrap_content"
+     		android:orientation="horizontal"
+            >
+    
+    <Button 
+        android:id="@+id/spider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignLeft="@id/multi"
+        android:layout_below="@id/multi"
+        android:paddingLeft="4dp"
+        android:text="Spiderman Effect"
+        android:onClick="sp"
+        
+        />
+    
+     <Button 
+        android:id="@+id/spider2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignBottom="@id/spider"
+        android:layout_toRightOf="@id/spider"
+        android:paddingLeft="4dp"
+        android:text="Spiderman"
+        android:onClick="sp2"
+        />
+     
+     </LinearLayout>
+     
+     <LinearLayout 
+            android:layout_width="wrap_content"
+     		android:layout_height="wrap_content"
+     		android:orientation="horizontal"
+            >   
+     
+     <Button 
+        android:id="@+id/spsk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignLeft="@id/spider"
+        android:layout_below="@id/spider"
+        android:paddingLeft="4dp"
+        android:text="Star Effect"
+        android:onClick="st"
+        
+        />
+     
+     
+     <Button 
+        android:id="@+id/texture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignBottom="@id/spsk"
+        android:layout_toRightOf="@id/spsk"
+        android:paddingLeft="4dp"
+        android:text="Texture Effect"
+        android:onClick="tx"
+        />
+     
+     </LinearLayout>
+     
+     
+     </LinearLayout>   
+     
+     </ScrollView>
+        
+    
+    
+    
+    
+    
+</RelativeLayout>
